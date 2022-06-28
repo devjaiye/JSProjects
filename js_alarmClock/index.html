@@ -1,0 +1,44 @@
+<!-- Step 1 in html, setup the skelenton project -->
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Alarm Timer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- step 2,iport the files (svg image and mp3 audido) and create the classes -->
+    <div class="wrapper">
+        <img src="files/clock.svg" alt="clock">
+        <h1>00:00:00 AM</h1>
+         <!-- Here is our dropdowm menu for Hours, Minutes and AM/PM -->
+        <div class="content">
+            <div class="column">
+                <select>  
+                    <option value="Hour" selected hidden>Hour</option>
+                </select>
+            </div>
+
+            <div class="column">
+                <select>
+                    <option value="Minutes" selected hidden>Minutes</option>
+                    
+                </select>
+            </div>
+
+            <div class="column">
+                <select>
+                    <option value="AM/PM" selected hidden>AM/PM</option>
+                    
+                </select>
+            </div>
+        </div>
+        <!-- end content -->
+
+        <!-- step 3 add button -->
+        <button>Set Alarm</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
