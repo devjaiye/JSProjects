@@ -6,6 +6,8 @@ const setAlarmBtn = document.querySelector("button")
 const content = document.querySelector(".content")
 let alarmTime, isAlarmSet = false //...enable and disable alarm 
 
+let color = 
+
 ringtone = new Audio("./files/ringtone.mp3")
 
 
@@ -62,7 +64,9 @@ setInterval(() =>{
         console.log("Hello alarm...")
         ringtone.play()
         ringtone.loop = true 
-   }
+   } else{
+    ringtone.pause() //..stop the alarm after 60 secs
+}
 }, 1000)
 
 
@@ -74,6 +78,7 @@ function setAlarm(){
         ringtone.pause() //..pause alarm ringtone
         content.classList.remove("disable")
         setAlarmBtn.innerText = "Set Alarm" //..change value of the button when disabled 
+        setAlarmBtn.style.background="green"
         return isAlarmSet = false
     }
 
@@ -85,7 +90,7 @@ function setAlarm(){
     } // console.log(time)
 
     isAlarmSet = true //...if the user sets an alarm, this will be triggered 
-    
+    setAlarmBtn.style.background="red"
     //..set alarm (step 1)
     alarmTime = time
 
