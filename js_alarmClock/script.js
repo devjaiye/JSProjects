@@ -64,7 +64,7 @@ setInterval(() =>{
         console.log("Hello alarm...")
         ringtone.play()
         ringtone.loop = true 
-   } else{
+   } else {
     ringtone.pause() //..stop the alarm after 60 secs
 }
 }, 1000)
