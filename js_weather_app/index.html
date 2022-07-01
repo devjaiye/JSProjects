@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>JS Calculator</title>
+    <title>JS Weather App</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- using BoxIcon to generate icons -->
-    <link href="https:">
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
+    <div class="wrapper">
+        <header><i class="bx bx-left-arrow-alt"></i>Weather App</header>
+        <section class="input-part">
+            <p class="info-text">Enter a valid city name</p>
+            <input type="text" placeholder="Enter city here..." spellcheck="false" required>
+            <div class="separator"></div>
+            <button>Get Device Loaction</button>
+        </section>
 
-    <script src="script.js"></script>
+        <!-- weather display section -->
+        <section class="weather-part">
+            <img src="icons/cloud.svg" alt="weather icon">
+            <div class="temp">
+                <span class="numb">13</span>
+                <span class="deg">*</span>C
+            </div>
+
+            <div class="weather">Broken Clouds</div>
+            <div class="location">
+                <i class="bx bx-map"></i>
+                <span>Lagos, Nigeria</span>
+            </div>
+            <div class="bottom-details">
+                <div class="column feels">
+                    <i class="bx bxs-thermometer"></i>
+                    <div class="details">
+                        <div class="temp">
+                            <span class="numb-2">17</span>
+                            <span class="deg">*</span>C
+                        </div>
+                        <P>Feels like</P>
+                    </div>
+                </div>
+
+                <div class="column humidity">
+                    <i class="bx bxs-droplet-half"></i>
+                    <div class="details">
+                            <span>84%</span>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+<script src="script.js"></script>
 </body>
 </html>
