@@ -12,17 +12,17 @@ body{
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    background-color: orange;
+    background-color: rgb(86, 11, 165);
 }
 
 .wrapper{
     width: 400px;
     border-radius: 7px;
-    background-color: green;
+    background-color: #fff;
 }
 
 .wrapper header{
-    color: orange;
+    color: rgb(86, 11, 165);
     font-size: 21px;
     font-weight: 500;
     padding: 16px 16px;
@@ -35,7 +35,7 @@ header i{
     cursor: pointer;
     font-size: 0px;
     margin-right: 8px;
-    color: #fff;
+    color: #000;
 }
 
 .wrapper.active header i{
@@ -115,7 +115,7 @@ header i{
 .input-part button{
     color: #fff;
     cursor: pointer;
-    background: orange;
+    background: rgb(86, 11, 165);
 }
 
 /* weather style */
