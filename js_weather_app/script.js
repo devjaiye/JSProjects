@@ -64,20 +64,20 @@ function weatherDetails(info){
         const{feels_like,humidity, temp} = info.main
 
         //...using custom icon accoriding to the id which api returns 
-          if(id == 800){
-             weatherIcon.src = "icons/clear.svg"
-          } else if(id >= 200 && id <= 232){
-             weatherIcon.src = "icons/storm.svg"
-          } else if(id >= 600 && id <= 622){
-            weatherIcon.src = "icons/snow.svg"
-          } else if(id >= 701 && id <= 781){
-             weatherIcon.src = "icons/haze.svg"
-          } else if(id >= 804 && id <= 801){
-            weatherIcon.src = "icons/cloud.svg"
-          }
-          else if((id >= 300 && id <= 321) || (id >= 500 && id <= 531)){
-            weatherIcon.src = "icons/rain.svg"
-          }
+        //   if(id == 800){
+        //      weatherIcon.src = "icons/clear.svg"
+        //   } else if(id >= 200 && id <= 232){
+        //      weatherIcon.src = "icons/storm.svg"
+        //   } else if(id >= 600 && id <= 622){
+        //     weatherIcon.src = "icons/snow.svg"
+        //   } else if(id >= 701 && id <= 781){
+        //      weatherIcon.src = "icons/haze.svg"
+        //   } else if(id >= 804 && id <= 801){
+        //     weatherIcon.src = "icons/cloud.svg"
+        //   }
+        //   else if((id >= 300 && id <= 321) || (id >= 500 && id <= 531)){
+        //     weatherIcon.src = "icons/rain.svg"
+        //   }
         
         //..parse the above values into the html elements 
         wrapper.querySelector(".temp, .numb").innerText = Math.floor(temp) //..round up number to nearest Integer
