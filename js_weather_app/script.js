@@ -2,10 +2,11 @@ const wrapper = document.querySelector(".wrapper")
 inputPart = document.querySelector(".input-part")
 infoText = document.querySelector(".info-text")
 inputField = document.querySelector("input")
-apiKey = "5c37294524c56b2e84a0ae6df81e3e45"
 getLocatiionBtn = document.querySelector("button")
 arrowBack = wrapper.querySelector("header i")
 let api
+var apiKey = config.API_KEY
+
 weatherIcon = document.querySelector("weather-part img")
 
 inputField.addEventListener("keyup", e=>{
