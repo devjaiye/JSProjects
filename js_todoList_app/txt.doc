@@ -1,0 +1,2 @@
+In this app the data are stored in the browser local storage 
+refreshing the webpage will not loose the data 
