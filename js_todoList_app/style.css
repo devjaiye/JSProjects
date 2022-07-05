@@ -1,4 +1,4 @@
-@import url("");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -110,14 +110,25 @@ body{
 
 .task .settings{
     cursor: pointer;
+    position: relative;
 }
 
 .settings .task-menu{
     position: absolute;
     padding: 5px 0;
+    right: -5px;
+    bottom: -65px;
+    transition: scale(0);
+    z-index: 2;
     border-radius: 5px;
     background: #fff;
+    transform-origin: top left;
+    transition: transform 0.2s ease;
     box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+
+.settings:hover .task-menu{
+    transform: scale(1);
 }
 
 .task-menu li{
