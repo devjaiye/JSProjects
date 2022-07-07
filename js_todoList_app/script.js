@@ -1,11 +1,13 @@
 const taskInput = document.querySelector(".task-input input")
 
 //..get localstorage todo-list
-let todos = JSON.parse(localstorage.getItem("todo-list"))
+let todos = JSON.parse(localStorage.getItem("todo-list"))
 
 function showTodo(){
+    let li = " "
     todos.forEach((todo, id) => {
-        console.log(id, todo)
+        // console.log(id, todo) //..get data from localStorage
+    li += ``
     })
 }
 
