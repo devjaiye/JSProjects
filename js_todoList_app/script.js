@@ -1,14 +1,31 @@
 const taskInput = document.querySelector(".task-input input")
+const taskBox = document.querySelector(".task-box")
 
 //..get localstorage todo-list
 let todos = JSON.parse(localStorage.getItem("todo-list"))
 
 function showTodo(){
     let li = " "
-    todos.forEach((todo, id) => {
-        // console.log(id, todo) //..get data from localStorage
-    li += ``
-    })
+    if(todos){
+        todos.forEach((todo, id) => {
+            // console.log(id, todo) //..get data from localStorage
+        li += `<li class="task">
+        <label for="${id}">
+            <input type="checkbox" id="${id}">
+            <p>${todo.name}</p>
+        </label>
+        <div class="settings">
+            <i class="uil uil-ellipsis-h"></i>
+            <ul class="task-menu">
+                <li><i class="uil uil-pen"></i>Edit</li>
+                <li><i class="uil uil-trash"></i>Delete</li>
+            </ul>
+        </div>
+    </li>`
+        })
+    }
+
+    taskBox.innerHTML = li
 }
 
 showTodo()
