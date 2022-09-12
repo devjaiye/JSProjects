@@ -2,8 +2,9 @@ const wrapper = document.querySelector(".wrapper")
 inputPart = document.querySelector(".input-part")
 infoText = document.querySelector(".info-text")
 inputField = document.querySelector("input")
-getLocatiionBtn = document.querySelector("button")
+getLocationBtn = document.querySelector("button")
 arrowBack = wrapper.querySelector("header i")
+//..api 
 let api
 var apiKey = config.API_KEY
 
@@ -16,7 +17,7 @@ inputField.addEventListener("keyup", e=>{
     }
 })
 
-getLocatiionBtn.addEventListener("click", ()=>{
+getLocationBtn.addEventListener("click", ()=>{
     //.. The geolocation api is used to get the user's current location
     if(navigator.geolocation){ //..if user's browser supports geolocation
         navigator.geolocation.getCurrentPosition(onSuccess, onError)
