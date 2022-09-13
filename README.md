@@ -4,9 +4,8 @@ This repository contains the projects I developed with ```HTML```, ```CSS``` and
 
 ### Weather app - Demo  :star:
 
+The app fecthes data from ```open weather api()```
 
 ![demo app](https://media.giphy.com/media/5eRJUKOOwBEI9DKVRl/giphy.gif)
 
-
- 
  [Fork my repository](https://github.com/devjaiye/JSProjects/fork)
