@@ -8,4 +8,7 @@ The app fecthes data from [open weather api](https://openweathermap.org/api)
 
 ![demo app](https://media.giphy.com/media/5eRJUKOOwBEI9DKVRl/giphy.gif)
 
- [Fork my repository](https://github.com/devjaiye/JSProjects/fork)
+
+ [Locate the source code](https://github.com/devjaiye/JSProjects/tree/master/js_weather_app) :computer:       
+ 
+ [Fork my repository](https://github.com/devjaiye/JSProjects/fork) 🍴
