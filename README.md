@@ -1,7 +1,9 @@
-# JavaScripy Projects 
-This repository contains projects made with HTML, CSS and JavaScript
+# JavaScripy Projects
 
-###  Weather App - Demo
+This repository contains the projects I developed with ```HTML```, ```CSS``` and ```JavaScript``` in my learning process
+
+### Weather app - Demo  :star:
+
 
 ![demo app](https://media.giphy.com/media/5eRJUKOOwBEI9DKVRl/giphy.gif)
 
