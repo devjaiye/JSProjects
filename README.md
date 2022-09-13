@@ -9,4 +9,4 @@ This repository contains the projects I developed with ```HTML```, ```CSS``` and
 
 
  
- [Fork my repository]([https://github.com/devjaiye/JSProjects](https://github.com/devjaiye/JSProjects/fork))
+ [Fork my repository](https://github.com/devjaiye/JSProjects/fork)
